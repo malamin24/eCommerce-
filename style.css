@@ -1,0 +1,544 @@
+/*
+theme name: personal portfolio 
+version: 1.0.0
+theme uri: #
+author: AL AMIN
+text Domain: alamin24
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Requires at least: 5.3
+Tested up to: 6.0
+Requires PHP: 5.6
+Description: My name is Al amin. My portfolio name alamin24. I am hard work for become a web designer. if a web designer than Md. Azizul islam give me work. so i amy trying always. 
+thanks
+tags: persolan-website, personal-protfolio, portfoli-website
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background: #ddd;
+    overflow-x: hidden;
+}
+
+/*-------- top menu section -----*/
+#top_menu {
+    background: #3a3c47;
+    justify-content: center;
+    color: white;
+}
+#top_menu .logo{
+    border-right: 1px solid #ddd;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+#top_menu h2{
+    font-size: 25px;
+    
+}
+#top_menu h2 span{
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    border: 1px solid green;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+#menu.active{
+    text-align: center;
+   
+}
+#menu ul {
+   margin: 0;
+   padding: 0;
+
+}
+#menu ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 5px;
+    margin: 10px;
+
+}
+#menu ul li a:hover{
+    background: white;
+    color: black;
+    padding: 10px ;
+
+}
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+#menu_toggle {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height:60px;
+    background: #D6A848;
+    cursor: pointer;
+    z-index: 4;
+    opacity: 0;
+
+}
+
+#menu_toggle::before {
+content: '\f0c9';
+ font-family: 'fontAwesome';
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ line-height: 60px;
+ text-align: center;
+ font-size: 24px;
+color: white;
+
+}
+#menu_toggle.active:before {
+    content: '\f00d';
+
+    }
+    @media (max-width: 720px) {
+        #menu{
+            position: fixed;
+            background: rgba(0, 0, 0, 0.829);
+            left: -300%;
+            z-index: 3;
+            width: 300px;
+            height: 100vh;
+            text-align: left;
+            top:0;
+            transition: 1s;
+            
+        }
+        #menu.active{
+            left:0px;
+            opacity: 1;
+        }
+        #menu ul li{
+            display: list-item ;
+            list-style: none;
+            padding: 10px 5px;
+            margin: 10px;
+        
+        }
+
+    
+        #menu_toggle{
+            opacity: 1;
+            position: fixed;
+        }
+        }
+    
+
+
+
+
+
+
+
+
+
+.log_message {
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+.log_message i{
+    margin: 5px;
+    
+}
+.login a i{
+   
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.login span{
+  padding: 10px;
+  color: white;
+
+}
+.login {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #ddd;
+}
+.login li{
+    list-style: none;
+}
+.login a{
+    text-decoration: none;
+ 
+}
+
+
+/*------------ shope -------*/
+
+#shop{
+  display: none;
+ }
+
+ #shop.active {
+   display: block;
+   
+    
+}
+
+#shop ul{
+    padding: 0;
+    position: absolute;
+    z-index: 2;
+    margin: 20px -38px;
+}
+
+
+#shop ul li{
+    list-style: none;
+        text-align: left;
+    padding: 10px 0;
+    background: #ddd;
+    
+}
+#shop ul li a{
+   text-decoration: none;
+   padding:10px;
+   
+}
+#shop ul li a:hover{
+    background: wheat;
+    
+ }
+#shop li i{
+    color: white;
+   
+   
+ }
+ #shop_taggole{
+    content: '';
+  
+ }
+ #shop_taggole::before{
+    content: '\f290';
+    font-family: 'fontAwesome';
+    color: white;
+    padding: 3px 10px;
+    
+ }
+
+
+
+
+
+
+
+
+/*------------- catagory --------------*/
+.catagory{
+    position: relative;
+    width: 100%;;
+}
+.catagory_4_Colums{
+    width: 100%;
+    height: 400px;
+}
+.catagory_4_Colums h2{
+   font-size: 25px;}
+.catagory_4_Colums img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*------------ fasshion----*/
+#fashion{
+    margin: 100px 0;
+    padding: 0;
+}
+.men_fashion_boy, .men_fashion_girl{
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    height: 300px;
+}
+.men_fashion_boy img, .men_fashion_girl img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+.men_fashion_boy::before{
+    content: 'for him';
+    background: rgba(0, 0, 0, 0.37);
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   display: flex;
+    width: 100%;
+    height: 300px;
+    font-size: 30px;
+    margin-left: -630px;
+    opacity: 1;
+    transition: .3s;
+    transition-delay: .2s;
+    z-index: 2;
+    
+    
+}
+.men_fashion_boy:hover:before{
+    margin-left:0;
+    opacity: 1;
+ 
+}
+
+.men_fashion_girl::before{
+    content: 'for him';
+    background: rgba(0, 0, 0, 0.37);
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   display: flex;
+    width: 100%;
+    height: 300px;
+    font-size: 30px;
+    margin-left: 630px;
+    opacity: 1;
+    transition: .3s;
+    transition-delay: .2s;
+    z-index: 2;
+    
+    
+}
+.men_fashion_girl:hover:before{
+    margin-left:0;
+    opacity: 1;
+ 
+}
+
+/*-------4 clumes ------------------*/
+.catagory{
+    margin: 20px 0;
+}
+.catagory_4_Colums{
+    position: relative;
+    margin:20px 0;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+   
+   
+}
+.catagory_4_Colums h3{
+   padding: 10px 0;
+    font-size: 25px;
+    font-family: 'roboto';
+   
+}
+.catagory_4_Colums img{
+    position: relative;
+    width: 100%;
+    height: 310px;
+    padding: 0 10px;
+    
+}
+.catagory_4_Colums a{
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    color: #3a3c47;
+}
+.catagory_4_Colums a:hover{
+font-weight: bold;
+}
+/*-------3 clumes ------------------*/
+.columes3{
+    margin: 0;
+    height: 300px;
+    position: relative;
+}
+.columes3 img{
+    width: 100%;
+    height: 100%;
+ 
+    }
+    .clumes3_tex{
+        position: absolute;
+        z-index: 10;
+       justify-content: center;
+        text-align: center;
+        top: 40%;
+        left: 25%;
+        background: #3a3c477e;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+     }
+     .clumes3_tex a{
+     text-decoration: none;
+     color: white;
+        
+     }
+
+/*------ sly slider ------------*/
+#best_seller {
+    margin: 20px;
+    position: relative;
+}
+ h1{
+    position:relative;
+text-align: center;
+font-family: 'roboto';
+}
+h1::before{
+    content: '';
+    background:white;
+    height: 2px;
+    position: absolute;
+    width: 38%;
+    left: 0;
+    top:50%;
+}
+h1::after{
+    content: '';
+    background: white;
+    height: 2px;
+    position: absolute;
+    width: 38%;
+    right: 0;
+    top:50%;
+}
+.wrap{
+    position: relative;
+    margin: 10px 0;
+
+}
+
+  
+  .scrollbar {
+	margin: 0 auto 30px;
+	width: 100%;
+	height: 4px;
+	line-height: 0;
+	position: relative;
+	background-color: #ccc;
+  }
+  
+  .handle {
+	width: 100px;
+	height: 100%;
+	background: red;
+	cursor: pointer;
+	height: 4px;
+  }
+  
+  .mousearea {
+	position: absolute;
+	top: -9px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+  }
+  
+  .frame ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 50px;
+    
+  }
+  
+  .clearfix li {
+	float: left;
+	width: 300px;
+	height: 350px;
+	margin: 0 10px 0 0;
+	padding: 0;
+	background: #eee;
+	color: #3a3c47;
+	text-align: center;
+	cursor: pointer;
+    border: 1px solid #ddd;
+  }
+
+ .clearfix li img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+  }
+ button.btn.prevPage{
+	position:absolute;
+	left: 0;
+	top: 40%;
+
+  }
+  button.btn.nextPage{
+	position: absolute;
+	right: 0;
+	top: 40%;
+  }
+/*--------------- footer ----------------*/
+#footer{
+    background:#3a3c47;
+    padding: 30px 0 ;
+    color: #ddd;
+}
+.footer_4 h3{
+    font-size: 20px;
+    font-family: 'roboto';
+
+}
+.footer_4 ul{
+    margin: 0;
+    padding: 0;
+}
+  .footer_4 li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.footer_4 li a{
+    text-decoration: none;
+    font-family: 'roboto';
+    color: white;
+    margin: 0;
+    padding: 0;
+    
+}
+.author{
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    background: #3a3c47;
+    color: white;
+}

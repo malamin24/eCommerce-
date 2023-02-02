@@ -1,0 +1,70 @@
+
+/*----------- Media----------------*/
+@media(max-width:720px){
+    .home_section, #about, #service , #portfolio, #news, #contract{
+        margin-left: 0px;        }   
+     
+       
+    /*------------- hove Section------*/
+        .home_section{
+            display: grid;
+            
+        }
+        #menu_section{
+    
+            
+            background: #222b428e;
+            
+         
+
+      
+        /*------------- gallary------*/
+        .photo-gallery{
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap:10px;
+            width: 100%;
+            height: 100%;
+            margin:20px;
+        }
+        .top-container label{
+            background:#ddd;
+            padding: 5px;
+            margin: 1px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .top-container h5{
+            margin:2px;
+            padding: 8px;
+            background: #D6A848;
+            font-size: 12px;
+            text-align: center;
+        }
+        /*------------- Contract------*/
+        
+        
+        .form{
+            width: 100%;
+            padding: 6px;
+            margin: 5px;
+            text-align: center;
+            
+        }
+        
+       
+        .form input, textarea{
+            width: 100%;
+            padding: 5px;
+            outline:none;
+            border: none;
+            
+           }
+
+
+
+
+
+
+        }
+
+    
